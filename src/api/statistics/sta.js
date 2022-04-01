@@ -8,9 +8,9 @@ export default {
       method: 'get'
     })
   },
-  showData(type, begin, end) {
+  showData(searchObj) {
     return request({
-      url: `${url}/showData/${type}/${begin}/${end}`,
+      url: `${url}/showData/${searchObj.type}/${searchObj.begin}/${searchObj.end}`,
       method: 'get'
     })
   }
