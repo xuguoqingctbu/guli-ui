@@ -86,7 +86,7 @@
           :show-file-list="false"
           :on-success="handleAvatarSuccess"
           :before-upload="beforeAvatarUpload"
-          :action="BASE_API + '/eduoss/admin/oss/file/upload'"
+          :action="BASE_API + '/ossService/admin/file/upload'"
           class="avatar-uploader"
         >
           <img :src="courseInfo.cover" width="400px" />

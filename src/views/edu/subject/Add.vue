@@ -17,7 +17,7 @@
           :on-error="fileUploadError"
           :disabled="importBtnDisabled"
           :limit="1"
-          :action="BASE_API+'/eduservice/eduService/subject/addSubject'"
+          :action="BASE_API+'/eduService/subject/addSubject'"
           name="file"
           accept="application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         >

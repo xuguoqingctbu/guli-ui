@@ -58,7 +58,7 @@
           :width="300"
           :height="300"
           :key="imagecropperKey"
-          :url="'/eduoss/admin1/oss/file/upload'"
+          :url="'/ossService/admin/file/upload'"
           field="file"
           @close="close"
           @crop-upload-success="cropSuccess"

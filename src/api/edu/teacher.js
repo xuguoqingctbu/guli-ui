@@ -1,7 +1,7 @@
 import request from '@/utils/request'
 
 //分页查询
-const url = "/eduservice/eduService/teacher"
+const url = "/eduService/teacher"
 export function getTeacherList(page, pageSize, data) {
   return request({
     url: `${url}/${page}/${pageSize}`,

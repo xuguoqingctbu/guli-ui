@@ -150,6 +150,28 @@ export const constantRoutes = [
   },
 
   {
+    path: '/statistics',
+    component: Layout,
+    redirect: '/statistics/create',
+    name: 'Statistics',
+    meta: { title: '统计分析', icon: 'chart' },
+    children: [
+      {
+        path: 'create',
+        name: 'StatisticsCreate',
+        component: () => import('@/views/sta/Create'),
+        meta: { title: '统计分析数据生成', icon: 'table' }
+      },
+      {
+        path: 'show',
+        name: 'StatisticsList',
+        component: () => import('@/views/sta/Show'),
+        meta: { title: '统计分析展示', icon: 'tree' },
+      },
+    ]
+  },
+
+  {
     path: '/example',
     component: Layout,
     redirect: '/example/table',

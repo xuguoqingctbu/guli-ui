@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-const url = "/eduservice/eduService/video"
+const url = "/eduService/video"
 
 //添加小节
 export function addVideo(video) {

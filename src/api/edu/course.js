@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-const url = "/eduservice/eduService/course"
+const url = "/eduService/course"
 
 export function getCourseList(page, pageSize, data) {
   return request({
