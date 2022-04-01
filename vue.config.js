@@ -44,30 +44,36 @@ module.exports = {
     //proxy: "http://localhost:9001",
     //开启代理服务器（方式二）
     proxy: {
-      '/eduservice': {
-        target: 'http://localhost:9081',
-        pathRewrite: { '^/dev-api/eduservice': '' },
+      '/dev-api': {
+        target: 'http://localhost:8222',
+        pathRewrite: { '^/dev-api': '' },
         ws: true, //用于支持websocket
         changeOrigin: true //用于控制请求头中的host值
       },
-      '/demo': {
-        target: 'http://localhost:5001',
-        pathRewrite: { '^/dev-api/demo': '' },
-        //ws: true, //用于支持websocket
-        //changeOrigin: true //用于控制请求头中的host值
-      },
-      '/eduoss': {
-        target: 'http://localhost:8002',
-        pathRewrite: { '^/dev-api/eduoss': '' },
-        ws: true, //用于支持websocket
-        changeOrigin: true //用于控制请求头中的host值
-      },
-      '/eduvideo': {
-        target: 'http://localhost:9003',
-        pathRewrite: { '^/dev-api/eduvideo': '' },
-        ws: true, //用于支持websocket
-        changeOrigin: true //用于控制请求头中的host值
-      }
+      // '/eduservice': {
+      //   target: 'http://localhost:9081',
+      //   pathRewrite: { '^/dev-api/eduservice': '' },
+      //   ws: true, //用于支持websocket
+      //   changeOrigin: true //用于控制请求头中的host值
+      // },
+      // '/demo': {
+      //   target: 'http://localhost:5001',
+      //   pathRewrite: { '^/dev-api/demo': '' },
+      //   //ws: true, //用于支持websocket
+      //   //changeOrigin: true //用于控制请求头中的host值
+      // },
+      // '/eduoss': {
+      //   target: 'http://localhost:8002',
+      //   pathRewrite: { '^/dev-api/eduoss': '' },
+      //   ws: true, //用于支持websocket
+      //   changeOrigin: true //用于控制请求头中的host值
+      // },
+      // '/eduvideo': {
+      //   target: 'http://localhost:9003',
+      //   pathRewrite: { '^/dev-api/eduvideo': '' },
+      //   ws: true, //用于支持websocket
+      //   changeOrigin: true //用于控制请求头中的host值
+      // }
     },
     disableHostCheck: true,
   },
